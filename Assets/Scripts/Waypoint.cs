@@ -1,7 +1,20 @@
 using UnityEngine;
 
+public enum WaypointType
+{
+    Guard,
+    Peasant,
+    Merchant,
+    Priest,
+    Noble,
+    Royalty,
+    House
+}
+
 public class Waypoint : MonoBehaviour
 {
+    public WaypointGroup waypointGroup;
+    public WaypointType waypointType;
     public float minWaitTime = 2f;         // Minimum wait time at this waypoint.
     public float maxWaitTime = 5f;         // Maximum wait time at this waypoint.
 
